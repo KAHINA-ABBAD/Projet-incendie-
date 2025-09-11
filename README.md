@@ -52,11 +52,7 @@ Développer un **prototype d’application** permettant :
 Placez ici vos fichiers **locaux** (non poussés sur GitHub) :
 
 - `csvs/incendies/*.csv` : exports BDIFF (séparateur `;`, paquets ≤ 30 000 lignes).
-- `csvs/communes/communes_2025.csv` : référentiel communes (séparateur `,`) contenant au minimum :
-  - code INSEE (colonne: `code_insee` ou `insee`…),
-  - latitude (`lat`),
-  - longitude (`lon`).
-Ces fichiers **ne sont pas** versionnés.
+- `csvs/communes/communes_2025.csv` : référentiel communes (séparateur `,`) 
 
 ## 📚 Références
 - [BDIFF – Base Incendies de Forêts](https://bdiff.agriculture.gouv.fr/incendies)  
