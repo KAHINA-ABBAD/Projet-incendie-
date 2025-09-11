@@ -34,26 +34,6 @@ Développer un **prototype d’application** permettant :
   - Saison et jour de l’année  
 - Score de risque par commune et période  
 
-
-
-# Dossier `data/` (non versionné)
-
-Placez ici vos fichiers **locaux** (non poussés sur GitHub) :
-
-- `csvs/incendies/*.csv` : exports BDIFF (séparateur `;`, paquets ≤ 30 000 lignes).
-- `csvs/communes/communes_2025.csv` : référentiel communes (séparateur `,`) contenant au minimum :
-  - code INSEE (colonne: `code_insee` ou `insee`…),
-  - latitude (`lat`),
-  - longitude (`lon`).
-
-Ces fichiers **ne sont pas** versionnés.
-
-## Téléchargement semi-automatique
-Un script d’exemple est fourni :
-```bash
-python scripts/download_communes.py
-
-
 ## 📅 Organisation du projet
 - **Jour 1-2** : Ingestion & consolidation SQL (BDIFF + INSEE)  
 - **Jour 3** : Développement application Streamlit  
@@ -65,7 +45,18 @@ python scripts/download_communes.py
 - Application Streamlit multi-onglets  
 - Modèle prédictif intégré  
 - Notebook EDA complet  
-- Documentation technique (README, rapport méthodologique)  
+- Documentation technique (README, rapport méthodologique)
+
+## Dossier `data/` (non versionné)
+
+Placez ici vos fichiers **locaux** (non poussés sur GitHub) :
+
+- `csvs/incendies/*.csv` : exports BDIFF (séparateur `;`, paquets ≤ 30 000 lignes).
+- `csvs/communes/communes_2025.csv` : référentiel communes (séparateur `,`) contenant au minimum :
+  - code INSEE (colonne: `code_insee` ou `insee`…),
+  - latitude (`lat`),
+  - longitude (`lon`).
+Ces fichiers **ne sont pas** versionnés.
 
 ## 📚 Références
 - [BDIFF – Base Incendies de Forêts](https://bdiff.agriculture.gouv.fr/incendies)  
