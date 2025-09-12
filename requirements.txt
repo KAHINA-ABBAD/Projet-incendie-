@@ -1,2 +1,6 @@
-pandas>=2.2
-SQLAlchemy>=2.0
+# Place ici tes dépendances Python
+# Exemple :
+# pandas
+# numpy
+# scikit-learn
+# streamlit

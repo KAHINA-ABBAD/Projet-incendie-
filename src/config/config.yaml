@@ -1,0 +1,13 @@
+# Exemple de configuration projet
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  features_dir: "data/features"
+
+model:
+  algo: "kmeans"
+  n_clusters: 4
+
+training:
+  seed: 42
+  test_size: 0.2

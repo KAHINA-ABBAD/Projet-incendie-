@@ -1,9 +1,19 @@
+# === DATA (ne jamais pousser) ===
+data/**
+!data/.gitkeep
+!data/README.md
+
+# Bases locales et fichiers lourds
+*.db
+*.sqlite
+*.parquet
+*.feather
+*.geojson
+*.zip
+
+# Virtuels & caches
+.env
 .venv/
 __pycache__/
 .ipynb_checkpoints/
-data/
-models/
-*.db
-*.parquet
-*.zip
-
+.DS_Store

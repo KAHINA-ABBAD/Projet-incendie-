@@ -1,65 +1,32 @@
-# 🌍🔥 Terre, Vent, Feu, Eau, Data
+# 🚀 Nom du projet
+<!-- Donne un titre clair et accrocheur -->
 
-## 🚨 Contexte
-L’été 2025 a été marqué par des incendies historiques en France, dont celui de l’Aude qui a ravagé **17 000 hectares en 48 heures**.  
-Face à l’urgence climatique et à la multiplication par 3 de la période à risque d’ici 2050, il est crucial de développer des outils d’intelligence prédictive pour anticiper et prévenir les feux de forêt.  
+## 🌍 Contexte
+<!-- Explique le problème ou le domaine (santé, climat, finance…) -->
 
-## 🎯 Objectif du projet
-Développer un **prototype d’application** permettant :  
-- La **visualisation interactive** des incendies (cartographie, filtres dynamiques, statistiques)  
-- La **prédiction du risque d’incendie** par commune et période via un modèle de machine learning  
+## 🎯 Objectifs
+<!-- Décris ce que ton projet cherche à accomplir -->
 
-## 🗄 Données utilisées
-- **BDIFF** (Base de Données sur les Incendies de Forêts en France, 1973-2024)  
-- **Référentiels géographiques INSEE** (codes INSEE, coordonnées lat/lng des communes)  
-- **Sources complémentaires** (surface de végétation, variables contextuelles)  
+## 🗄 Données
+<!-- Liste les sources de données utilisées -->
 
 ## 🛠️ Technologies
-- **Python** (Pandas, GeoPandas, Scikit-learn)  
-- **SQL** (consolidation multi-sources)  
-- **Streamlit** (application web interactive)  
-- **Folium / Maplibre** (cartographie)  
-- **Git & GitHub** (versioning, collaboration)  
+<!-- Python, SQL, librairies ML, visualisation, etc. -->
 
-## 📊 Fonctionnalités du prototype
-### Onglet 1 : Analyse Historique
-- Cartographie interactive des incendies  
-- Filtres : période, gravité, type de végétation, origine du feu  
-- Statistiques descriptives (évolution temporelle, répartition des causes, hotspots)  
+## 📊 Fonctionnalités
+<!-- Analyse exploratoire, prédiction, visualisation… -->
 
-### Onglet 2 : Prédiction des Risques
-- Modèle de **clustering spatio-temporel** basé sur :  
-  - Historique des incendies par commune  
-  - Données des communes voisines  
-  - Saison et jour de l’année  
-- Score de risque par commune et période  
+## 📂 Organisation du projet
+<!-- Explique la structure des dossiers et scripts -->
 
-## 📅 Organisation du projet
-- **Jour 1-2** : Ingestion & consolidation SQL (BDIFF + INSEE)  
-- **Jour 3** : Développement application Streamlit  
-- **Jour 4** : Modélisation Machine Learning  
-- **Jour 5** : Tests finaux, documentation & soutenance  
+## 📦 Installation
+\`\`\`bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+\`\`\`
 
-## 📦 Livrables
-- Base SQL consolidée  
-- Application Streamlit multi-onglets  
-- Modèle prédictif intégré  
-- Notebook EDA complet  
-- Documentation technique (README, rapport méthodologique)
-
-## Dossier `data/` (non versionné)
-
-Placez ici vos fichiers **locaux** (non poussés sur GitHub) :
-
-- `csvs/incendies/*.csv` : exports BDIFF (séparateur `;`, paquets ≤ 30 000 lignes).
-- `csvs/communes/communes_2025.csv` : référentiel communes (séparateur `,`) 
-
-## 📚 Références
-- [BDIFF – Base Incendies de Forêts](https://bdiff.agriculture.gouv.fr/incendies)  
-- [Référentiel Géographique – data.gouv.fr](https://adresse.data.gouv.fr/outils/telechargements)  
-- [Documentation Streamlit](https://docs.streamlit.io/)  
-- [Clustering spatio-temporel – scikit-learn](https://scikit-learn.org/stable/modules/clustering.html#clustering)  
-
----
-🚀 **Projet pédagogique – Data IA & Environnement**  
-
+## 🚀 Exécution
+\`\`\`bash
+make run   # ou python scripts/mon_script.py
+\`\`\`
