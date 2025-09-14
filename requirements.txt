@@ -1,6 +1,9 @@
-# Place ici tes dépendances Python
-# Exemple :
-# pandas
-# numpy
-# scikit-learn
-# streamlit
+# Les dépendances du projet
+streamlit==1.37.1
+pandas
+numpy
+scikit-learn
+matplotlib
+
+# Pour la première utilisation de ce projet, exécuter : 
+# pip install -r requirements.txt
