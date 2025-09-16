@@ -1,9 +1,15 @@
 # Les dépendances du projet
-streamlit==1.37.1
+streamlit
 pandas
 numpy
-scikit-learn
 matplotlib
+seaborn
+joblib
+scikit-learn
+folium
+streamlit-folium
 
 # Pour la première utilisation de ce projet, exécuter : 
 # pip install -r requirements.txt
+
+
